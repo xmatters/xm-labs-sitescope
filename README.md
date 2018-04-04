@@ -12,6 +12,20 @@ The information provided details the instructions to configure a trigger to exec
 SiteScope uses Action Alerts that are capable of performing HTTP Rest Web Service calls to xMatters to generate an xMatters alert.
 
 # Installation
+To begin, download the integration zip file attached to this article and extract it to a location on your local machine. Some of the instructions in this article reference specific folders within the extracted integration archive.  
+
+## xMatters set up
+### Create a REST user account
+INSERT PIC FOR CREATION OF USER
+
+### Assign permissions to the Communication Plan and Form  
+* On the Communication Plans page, click the Edit drop-down menu for the SiteScope communication plan then select Access Permissions
+* Add the REST User created above
+* On the Communication Plans page, click the Edit drop-down menu for the SiteScope communication plan then select Forms
+* Click the Web Service drop-down menu for the SiteScope form
+* Select Sender Permissions then add the REST User created above
+* From within the Forms page, click the Integration Builder tab
+* From within the Integration Builder page select Edit Endpoints and add the REST User Created
 
 ## HP SiteScope
 
