@@ -9,23 +9,21 @@ The information provided details the instructions to configure a trigger to exec
 * [SiteScope Mapping File](xMatters) - The JSON mapping file for SiteScope
 
 # How it works
-SiteScope uses Action Alerts that are capable of performing HTTP Rest Web Service calls to xMatters to generate an xMatters alert.
+SiteScope uses Action Alerts that are capable of performing HTTP Rest Web Service calls to xMatters to generate an xMatters alert. The Action Alerts are configured to run based on trigger conditions in SiteScope.
 
 # Installation
-To begin, download the integration zip file attached to this article and extract it to a location on your local machine. Some of the instructions in this article reference specific folders within the extracted integration archive.  
 
 ## xMatters set up
 ### Create a REST user account
-INSERT PIC FOR CREATION OF USER
+*First Name:* SiteScope
+*Last Name:* Rest Web Service
+*User ID:* sitescope
+*Roles:* REST Web Service User
 
-### Assign permissions to the Communication Plan and Form  
-* On the Communication Plans page, click the Edit drop-down menu for the SiteScope communication plan then select Access Permissions
-* Add the REST User created above
-* On the Communication Plans page, click the Edit drop-down menu for the SiteScope communication plan then select Forms
-* Click the Web Service drop-down menu for the SiteScope form
-* Select Sender Permissions then add the REST User created above
-* From within the Forms page, click the Integration Builder tab
-* From within the Integration Builder page select Edit Endpoints and add the REST User Created
+### Assign permissions to the Communication Plan, Form, and Endpoint  
+1. On the Communication Plans page, click the Edit drop-down menu for the SiteScope communication plan then select Access Permissions, and then add the xMatters REST User created.
+2. On the Communication Plans page, click the Edit drop-down menu for the SiteScope communication plan then select Forms. Click the Web Service drop-down menu for the SiteScope form, select Sender Permissions, and then add the xMatters REST User created.
+3. From within the Forms page, click the Integration Builder tab, select Edit Endpoints, and then add the xMatters REST User created.
 
 ## HP SiteScope
 
@@ -52,8 +50,17 @@ To create a new alert:
 2. Enter a name for the alert.
 3. Configure an alert action (in the Alert Actions panel, click New Alert Action to start the Alert Action wizard).
 4. For Action Type select Rest.
+
+<kbd>
+  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/action_type.png">
+</kbd>
+
 5. Once Rest is selected, on the next window ensure that xMatters is selected for template.
 
+
+<kbd>
+  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/action_type_settings.png">
+</kbd>
 
 Copy an Alert Definition. In the Alerts tab, select the alert you want to copy, and paste it into the desired group or monitor container. The alert target automatically changes to the group or monitor into which the alert is copied.
 
