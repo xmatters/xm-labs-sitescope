@@ -1,11 +1,11 @@
-# HP SiteScope
-The information provided details the instructions to configure a trigger to execute a web service call to xMatters.
+# HP SiteScope (One-way) Integration
+The information provided details the instructions to configure a one-way integration to trigger a web service call to xMatters.
 
 # Pre-Requisites
 * HP SiteScope 11.32.301
 
 # Files
-* [xMatters Communication Plan](SiteScope.zip) - The JSON mapping file for SiteScope
+* [SiteScope Communication Plan](SiteScope.zip) - The JSON mapping file for SiteScope
 * [SiteScope Mapping File](xMatters) - The JSON mapping file for SiteScope
 
 # How it works
@@ -13,7 +13,12 @@ SiteScope uses Action Alerts that are capable of performing HTTP Rest Web Servic
 
 # Installation
 
-## xMatters set up
+### Import the Communication Plan
+* Import the SiteScope Communication Plan [SiteScope Communication Plan](SiteScope.zip)
+* Instructions to import a Communication Plan can be found here: [Import a Communication Plan](http://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm)
+
+### Import Communication Plan
+
 ### Create a REST user account
 * **First Name:** SiteScope
 * **Last Name:** Rest Web Service
@@ -44,8 +49,8 @@ SiteScope uses Action Alerts that are capable of performing HTTP Rest Web Servic
 ### Deploy the xMatters REST Mapping File
 
 1. Navigate to the server that contains the SiteScope root directory
-2. Navigate to the following directory: <SiteScope root directory>\templates.rest\
-3. From within the templates.rest directory, add the [xMatters](xMatters) file.
+2. Navigate to the following directory: `<SiteScope root directory>\templates.rest`
+3.From within the `\templates.rest` directory, add the [xMatters](xMatters) file.
 
 ### Configure a SiteScope Alert
 
@@ -77,10 +82,6 @@ To create a new alert:
 </kbd>
 
 Copy an Alert Definition. In the Alerts tab, select the alert you want to copy, and paste it into the desired group or monitor container. The alert target automatically changes to the group or monitor into which the alert is copied.
-
-
-To format the content of messages submitted to the URL of any REST service. Navigate to <SiteScope root directory>\templates.rest. From within this directory add the xm-sitescope-trigger.json file. Once added this will now be available to be configured from within the action screen.
-
 
 ### Action Type Settings Panel
 The contents of this panel depend on the action type you selected in the Action Type dialog box.
@@ -122,7 +123,6 @@ Default Value: JSON
 **Additional Parameters**	Enter any parameter that REST API supports. You must enter all the additional parameters used in the template. The format for providing the parameters is <name> = <value> with multiple parameters separated by commas. The <name> specified here must match the parameter name specified in the template.
 
 Note: If there are additional parameters specified in the template and if you do NOT specify in this field, then it results in an error. You can see the error messages in the alert.log file in the SiteScope Logs directory located at <install_dir>/Sitescope/logs .
-
 
 ### Editing the Filter
 This task describes how to customize SiteScope alert templates to alter the content and format of alert messages.
