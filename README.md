@@ -81,36 +81,15 @@ To create a new alert:
   <img src="https://github.com/matthewhenry1/xm-labs-sitescope/blob/master/media/action_type_settings.png">
 </kbd>
 
-Copy an Alert Definition. In the Alerts tab, select the alert you want to copy, and paste it into the desired group or monitor container. The alert target automatically changes to the group or monitor into which the alert is copied.
-
-### Action Type Settings Panel
-The contents of this panel depend on the action type you selected in the Action Type dialog box.
-
-#### To access
-Right-click the SiteScope, group, or monitor for the alert, and select New > Alert, or select an existing alert in the Alerts tab (monitor or template view) and click the Edit Alert  button. In the Alert Actions section of the New/Edit Alert dialog box, click the New Alert Action Delete button button. In the Action Type dialog box, select an action type.
-
-#### Important information
-The option to create alerts using the Pager or SMS action type is no longer available, and we plan to remove support for Pager and SMS Alert action types in the next version of SiteScope.
-
-#### Relevant tasks
-[Configure SiteScope Alerts](http://sitescope-help.saas.hpe.com/en/11.40/Online/Content/Use/alert_workflow.htm)
-
-#### See also
-[Alert Action Dialog Box](http://sitescope-help.saas.hpe.com/en/11.40/Online/Content/Use/Action_Type_Settings_Panel.htm)
-
-### User interface elements are described below:
+#### User interface elements are described below:
 
 **Action name** The name given to the action to be done when the alert is triggered. It is not the name of the alert.
 
-**Rest to URL form** Enter the URL of the application where you want to send alerts from SiteScope.
+**Rest to URL form** <INSERT STEPS TO INSERT INTEGRATION BUILDER URL>
 
-For example, to send alerts to the Slack messaging application, provide the URL https://<text>.slack.com/<TOKEN KEY>, where <TOKEN KEY> is the value that Slack provides when the user creates a team in the Slack application.
+**Template** xMatters
 
-**Template** Select the template for the Rest alert action type.
-
-Default value: Name of the template.
-
-Note: You can view the contents of the existing templates or add additional templates in the <SiteScope root directory>\templates.rest directory. For more details on alert templates, see Customize Alert Templates.
+Note: You can view the contents of the existing templates or add additional templates in the `<SiteScope root directory>\templates.rest` directory. For more details on alert templates, see [Customize Alert Templates](http://sitescope-help.saas.hpe.com/en/11.40/Online/Content/Use/cust_alert_templates.htm).
 
 **HTTP Method** Select the HTTP method for the Rest alert action.
 
@@ -123,6 +102,12 @@ Default Value: JSON
 **Additional Parameters**	Enter any parameter that REST API supports. You must enter all the additional parameters used in the template. The format for providing the parameters is <name> = <value> with multiple parameters separated by commas. The <name> specified here must match the parameter name specified in the template.
 
 Note: If there are additional parameters specified in the template and if you do NOT specify in this field, then it results in an error. You can see the error messages in the alert.log file in the SiteScope Logs directory located at <install_dir>/Sitescope/logs .
+
+#### Relevant tasks
+[Configure SiteScope Alerts](http://sitescope-help.saas.hpe.com/en/11.40/Online/Content/Use/alert_workflow.htm)
+
+#### See also
+[Alert Action Dialog Box](http://sitescope-help.saas.hpe.com/en/11.40/Online/Content/Use/Action_Type_Settings_Panel.htm)
 
 ### Editing the Filter
 This task describes how to customize SiteScope alert templates to alter the content and format of alert messages.
