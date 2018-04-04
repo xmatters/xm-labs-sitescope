@@ -22,16 +22,16 @@ SiteScope uses Action Alerts that are capable of performing HTTP Rest Web Servic
 
 ### Assign permissions to the Communication Plan, Form, and Endpoint  
 1. Communication Plan
-      * From within the Developer tab, select the Edit drop-down menu for the SiteScope communication plan
-      * From the Edit drop-down menu, select Access Permissions
-      * From within Access Permissions, add the xMatters REST User created
+  * From within the Developer tab, select the Edit drop-down menu for the SiteScope communication plan
+  * From the Edit drop-down menu, select Access Permissions
+  * From within Access Permissions, add the xMatters REST User created
 
 2. Form
-      * From within the Developer tab, select the Edit drop-down menu for the SiteScope communication plan
-      * From the Edit drop-down menu, select Forms
-      * From within Forms, select the Web Service drop-down menu for the SiteScope form
-      * From within Web Service drop-down menu, select Sender Permissions
-      * From within Sender Permissions, add the xMatters REST User created
+    * From within the Developer tab, select the Edit drop-down menu for the SiteScope communication plan
+    * From the Edit drop-down menu, select Forms
+    * From within Forms, select the Web Service drop-down menu for the SiteScope form
+    * From within Web Service drop-down menu, select Sender Permissions
+    * From within Sender Permissions, add the xMatters REST User created
 
 3. Endpoint
       * From within the Developer tab, select the Edit drop-down menu for the SiteScope communication plan
