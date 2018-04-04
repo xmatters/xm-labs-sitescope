@@ -15,10 +15,10 @@ SiteScope uses Action Alerts that are capable of performing HTTP Rest Web Servic
 
 ## xMatters set up
 ### Create a REST user account
-**First Name:** SiteScope
-**Last Name:** Rest Web Service
-**User ID:** sitescope
-**Roles:** REST Web Service User
+   **First Name:** SiteScope
+   **Last Name:** Rest Web Service
+   **User ID:** sitescope
+   **Roles:** REST Web Service User
 
 ### Assign permissions to the Communication Plan, Form, and Endpoint  
 1. On the Communication Plans page, click the Edit drop-down menu for the SiteScope communication plan then select Access Permissions, and then add the xMatters REST User created.
