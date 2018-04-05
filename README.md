@@ -83,23 +83,28 @@ To create a new alert:
 
 #### User interface elements are described below:
 
-**Action name** The name given to the action to be done when the alert is triggered. It is not the name of the alert.
+**Action name:** xMatters Alert
 
-**Rest to URL form** <INSERT STEPS TO INSERT INTEGRATION BUILDER URL>
+**Rest to URL form:** To populate this field, follow the next steps:
+1. Navigate to xMatters
+2. Navigate to the Developer tab
+3. From within the Developer tab, select the Edit drop-down menu for the SiteScope communication plan
+4. From the Edit drop-down menu, select Integration Builder
+5. From within the Integration Builder tab, find the Inbound Integrations and select the **Inbound - SiteScope**
+6. From within the Inbound Integrations page, ensure that Base Authentication is selected.
+7. Lastly copy the URL at the bottom of the page and paste it into the REST to URL form field.
 
-**Template** xMatters
+**Template:** xMatters
 
 Note: You can view the contents of the existing templates or add additional templates in the `<SiteScope root directory>\templates.rest` directory. For more details on alert templates, see [Customize Alert Templates](http://sitescope-help.saas.hpe.com/en/11.40/Online/Content/Use/cust_alert_templates.htm).
 
-**HTTP Method** Select the HTTP method for the Rest alert action.
+**HTTP Method:** POST
 
-Default Value: POST
+**Format Type:**	JSON
 
-**Format Type**	Select the format type for the Rest alert action.
+**Additional Parameters:**	Not needed for the xMatters integration. However, below is an explanation of this field.
 
-Default Value: JSON
-
-**Additional Parameters**	Enter any parameter that REST API supports. You must enter all the additional parameters used in the template. The format for providing the parameters is <name> = <value> with multiple parameters separated by commas. The <name> specified here must match the parameter name specified in the template.
+Enter any parameter that REST API supports. You must enter all the additional parameters used in the template. The format for providing the parameters is <name> = <value> with multiple parameters separated by commas. The <name> specified here must match the parameter name specified in the template.
 
 Note: If there are additional parameters specified in the template and if you do NOT specify in this field, then it results in an error. You can see the error messages in the alert.log file in the SiteScope Logs directory located at <install_dir>/Sitescope/logs .
 
@@ -124,4 +129,4 @@ For a list of specific property variables, see [Properties Available in Alerts, 
 4. Save the changes to a unique filename within the directory for the applicable alert type. The new template is added to the Action Type Settings Template drop-down list.
 
 # Testing
-For testing execute the action to occur.
+For testing execute the action to occur and navigate to xMatters OnDemand and view the Integration Builder activity stream.
