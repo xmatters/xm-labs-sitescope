@@ -13,6 +13,8 @@ SiteScope uses Action Alerts that are capable of performing HTTP Rest Web Servic
 
 # Installation
 
+## xMatters
+
 ### Import the Communication Plan
 * Import the SiteScope Communication Plan [SiteScope Communication Plan](SiteScope.zip)
 * Instructions to import a Communication Plan can be found here: [Import a Communication Plan](http://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm)
@@ -130,3 +132,6 @@ For a list of specific property variables, see [Properties Available in Alerts, 
 
 # Testing
 For testing execute the action to occur and navigate to xMatters OnDemand and view the Integration Builder activity stream.
+
+# Troubleshooting
+For any troubleshooting regarding submissions to xMatters it will be best to view the activity stream
