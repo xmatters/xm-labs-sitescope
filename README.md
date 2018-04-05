@@ -71,14 +71,14 @@ To create a new alert:
 4. For Action Type select Rest.
 
 <kbd>
-  <img src="https://github.com/matthewhenry1/xm-labs-sitescope/blob/master/media/action_type.png">
+  <img src="https://github.com/matthewhenry1/xm-labs-sitescope/blob/master/media/action_type.png" width="550" height="461">
 </kbd>
 
 5. Once Rest is selected, on the next window ensure that xMatters is selected for template.
 
 
 <kbd>
-  <img src="https://github.com/matthewhenry1/xm-labs-sitescope/blob/master/media/action_type_settings.png">
+  <img src="https://github.com/matthewhenry1/xm-labs-sitescope/blob/master/media/action_type_settings.png" width="550" height="461">
 </kbd>
 
 #### User interface elements are described below:
