@@ -5,7 +5,7 @@ The information provided details the instructions to configure a one-way integra
 * HP SiteScope 11.32.301
 
 # Files
-* [SiteScope.zip](SiteScope.zip) - The JSON mapping file for SiteScope
+* [SiteScope.zip](SiteScope.zip) - The xMatters Communication Plan
 * [xMatters](xMatters) - The JSON mapping file for SiteScope
 
 # How it works
