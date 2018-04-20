@@ -5,8 +5,8 @@ The information provided details the instructions to configure a one-way integra
 * HP SiteScope 11.32.301
 
 # Files
-* [SiteScope Communication Plan](SiteScope.zip) - The JSON mapping file for SiteScope
-* [SiteScope Mapping File](xMatters) - The JSON mapping file for SiteScope
+* [SiteScope.zip](SiteScope.zip) - The JSON mapping file for SiteScope
+* [xMatters](xMatters) - The JSON mapping file for SiteScope
 
 # How it works
 SiteScope uses Action Alerts that are capable of performing HTTP Rest Web Service calls to xMatters to generate an xMatters alert. The Action Alerts are configured to run based on trigger conditions in SiteScope.
@@ -16,7 +16,7 @@ SiteScope uses Action Alerts that are capable of performing HTTP Rest Web Servic
 ## xMatters
 
 ### Import the Communication Plan
-* Import the SiteScope Communication Plan [SiteScope Communication Plan](SiteScope.zip)
+* Import the SiteScope Communication Plan [SiteScope.zip](SiteScope.zip)
 * Instructions to import a Communication Plan can be found here: [Import a Communication Plan](http://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm)
 
 ### Import Communication Plan
@@ -52,7 +52,7 @@ SiteScope uses Action Alerts that are capable of performing HTTP Rest Web Servic
 
 1. Navigate to the server that contains the SiteScope root directory
 2. Navigate to the following directory: `<SiteScope root directory>\templates.rest`
-3.From within the `\templates.rest` directory, add the [xMatters](xMatters) file.
+3. From within the `\templates.rest` directory, add the [xMatters](xMatters) file.
 
 ### Configure a SiteScope Alert
 
