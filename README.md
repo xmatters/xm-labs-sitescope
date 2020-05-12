@@ -5,7 +5,7 @@ The information provided details the instructions to configure a one-way integra
 * HP SiteScope 11.32.301
 
 # Files
-* [SiteScope.zip](SiteScope.zip) - The xMatters Communication Plan
+* [SiteScope.zip](SiteScope.zip) - The xMatters Workflow
 * [xMatters](xMatters) - The JSON mapping file for SiteScope
 
 # How it works
@@ -15,11 +15,10 @@ SiteScope uses Action Alerts that are capable of performing HTTP Rest Web Servic
 
 ## xMatters
 
-### Import the Communication Plan
-* Import the SiteScope Communication Plan [SiteScope.zip](SiteScope.zip)
-* Instructions to import a Communication Plan can be found here: [Import a Communication Plan](http://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm)
+### Import the Workflow
+* Import the SiteScope Workflow [SiteScope.zip](SiteScope.zip)
+* Instructions to import a Workflow can be found here: [Import a Workflow](http://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm)
 
-### Import Communication Plan
 
 ### Create a REST user account
 * **First Name:** SiteScope
@@ -27,21 +26,21 @@ SiteScope uses Action Alerts that are capable of performing HTTP Rest Web Servic
 * **User ID:** sitescope
 * **Roles:** REST Web Service User
 
-### Assign permissions to the Communication Plan, Form, and Endpoint  
-1. **Communication Plan**
-    * From within the Developer tab, select the Edit drop-down menu for the SiteScope communication plan
+### Assign permissions to the Workflow, Form, and Endpoint  
+1. **Workflow**
+    * From within the workflow page, select the Edit drop-down menu for the SiteScope Workflow
     * From the Edit drop-down menu, select Access Permissions
     * From within Access Permissions, add the xMatters REST User created
 
 2. **Form**
-    * From within the Developer tab, select the Edit drop-down menu for the SiteScope communication plan
+    * From within the W tab, select the Edit drop-down menu for the SiteScope Workflow
     * From the Edit drop-down menu, select Forms
     * From within Forms, select the Web Service drop-down menu for the SiteScope form
     * From within Web Service drop-down menu, select Sender Permissions
     * From within Sender Permissions, add the xMatters REST User created
 
 3. **Endpoint**
-    * From within the Developer tab, select the Edit drop-down menu for the SiteScope communication plan
+    * From within the workflow page, select the Edit drop-down menu for the SiteScope Workflow
     * From the Edit drop-down menu, select Integration Builder
     * From within the Integration Builder tab, select Edit Endpoints
     * From within Edit Endpoints, add the xMatters REST User created
@@ -73,14 +72,14 @@ To create a new alert:
 4. For Action Type select Rest.
 
 <kbd>
-  <img src="https://github.com/matthewhenry1/xm-labs-sitescope/blob/master/media/action_type.png" width="550" height="461">
+  <img src="/media/action_type.png" width="550" height="461">
 </kbd>
 
 5. Once Rest is selected, on the next window ensure that xMatters is selected for template.
 
 
 <kbd>
-  <img src="https://github.com/matthewhenry1/xm-labs-sitescope/blob/master/media/action_type_settings.png" width="550" height="461">
+  <img src="/media/action_type_settings.png" width="550" height="461">
 </kbd>
 
 #### User interface elements are described below:
@@ -89,8 +88,8 @@ To create a new alert:
 
 **Rest to URL form:** To populate this field, follow the next steps:
 1. Navigate to xMatters
-2. Navigate to the Developer tab
-3. From within the Developer tab, select the Edit drop-down menu for the SiteScope communication plan
+2. Navigate to the workflow page
+3. From within the workflow page, select the Edit drop-down menu for the SiteScope Workflow
 4. From the Edit drop-down menu, select Integration Builder
 5. From within the Integration Builder tab, find the Inbound Integrations and select the **Inbound - SiteScope**
 6. From within the Inbound Integrations page, ensure that Base Authentication is selected.
@@ -102,9 +101,9 @@ Note: You can view the contents of the existing templates or add additional temp
 
 **HTTP Method:** POST
 
-**Format Type:**	JSON
+**Format Type:**  JSON
 
-**Additional Parameters:**	Not needed for the xMatters integration. However, below is an explanation of this field.
+**Additional Parameters:**  Not needed for the xMatters integration. However, below is an explanation of this field.
 
 Enter any parameter that REST API supports. You must enter all the additional parameters used in the template. The format for providing the parameters is <name> = <value> with multiple parameters separated by commas. The <name> specified here must match the parameter name specified in the template.
 
